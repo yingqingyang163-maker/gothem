@@ -1,0 +1,59 @@
+/* Reading shelf: reuse the site's navy, teal, and warm-gold palette. */
+#reading .reading-category-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:0 0 34px}
+#reading .reading-category-link{display:flex;align-items:center;gap:15px;min-height:74px;padding:15px 18px;border:1px solid #dfb57965;border-radius:6px;background:#122331;color:#f1e7d5;text-decoration:none;transition:border-color .2s,background .2s,transform .2s}
+#reading .reading-category-link:hover,#reading .reading-category-link:focus-visible{border-color:#efc789;background:#1a303d;transform:translateY(-2px)}
+#reading .reading-category-icon{font-size:23px}
+#reading .reading-category-link strong,#reading .reading-category-link small{display:block}
+#reading .reading-category-link strong{font-size:16px;color:#efc789}
+#reading .reading-category-link small{margin-top:4px;color:#aab9c5;font:12px/1.4 Georgia,"Microsoft YaHei",serif}
+#reading .category-arrow{margin-left:auto;color:#d9b47b;font-size:18px}
+#reading .reading-category{margin-top:30px;scroll-margin-top:180px}
+#reading .reading-category-intro{margin:-7px 0 20px;color:#c2cdd3;font-size:15px;line-height:1.8}
+#reading .reading-category-intro span{display:block;color:#9badbc;font-size:13px}
+#reading .book-jump-list{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 25px}
+#reading .book-jump{display:inline-flex;align-items:center;gap:9px;min-height:42px;padding:8px 13px;border:1px solid #dfb57970;border-radius:4px;background:#0d1c29;color:#ead7b6;font-size:14px;line-height:1.3;text-decoration:none;transition:color .18s,border-color .18s,background .18s}
+#reading a.book-jump:hover,#reading a.book-jump:focus-visible{border-color:#efc789;background:#263746;color:#ffe2af}
+#reading .jump-mark{color:#c7a36e;font-size:13px}
+#reading .book-jump--pending{align-items:flex-start;flex-direction:column;gap:2px;border-style:dashed;border-color:#9eabb455;background:transparent;color:#bac4cc;opacity:.58;cursor:default}
+#reading .book-jump--pending small{font-size:10px;color:#9eabb4}
+#reading .reading-books{display:grid;gap:0}
+#reading .reading-books .book-entry{scroll-margin-top:180px;min-width:0}
+#reading .book-header{min-width:0}
+#reading .book-title{display:flex;flex-direction:column;align-items:flex-start;gap:3px;line-height:1.35}
+#reading .book-title-zh{color:#f1eee7}
+#reading .book-title-en{display:block;color:#bdc8d0;font:italic 16px/1.45 Georgia,"Times New Roman",serif;overflow-wrap:anywhere}
+#reading .book-title a{color:inherit;text-decoration:none;display:block;max-width:100%}
+#reading .book-title a:hover .book-title-zh,#reading .book-title a:focus-visible .book-title-zh{color:#efc789;text-decoration:underline;text-underline-offset:4px}
+#reading .book-author{display:block;margin-top:5px;color:#99aab7;font-size:13px;line-height:1.5}
+#reading .book-overview{max-width:850px}
+#reading .book-overview-label{margin:0 0 7px!important;color:#efc789!important;font-size:10px!important;font-weight:600;letter-spacing:.16em}
+#reading .book-overview .book-review-en{margin:0;color:#c5d0d6!important;font-size:15px!important;line-height:1.8}
+#reading .reflection-status{display:flex;align-items:center;gap:8px;margin:17px 0 0!important;padding-top:12px;border-top:1px solid #ffffff17;color:#b9c5cb;font-size:12px!important;letter-spacing:.04em}
+#reading .reflection-status span{color:#dcb77c}
+#reading .shelf-cover{background:linear-gradient(145deg,#182b3c,#0b1925)!important}
+#reading .shelf-cover--dune{background:linear-gradient(145deg,#5a3b20,#1c2b31 72%,#101c24)!important}
+#reading .shelf-cover--enders{background:linear-gradient(145deg,#203f56,#141a2b 72%,#0d1721)!important}
+#reading .shelf-cover--hunger{background:linear-gradient(145deg,#51351f,#272029 70%,#111a25)!important}
+#reading .shelf-cover--guardians{background:linear-gradient(145deg,#28443d,#182b35 72%,#101b24)!important}
+#reading .shelf-cover--revenge{background:linear-gradient(145deg,#44305a,#182a3b 72%,#101b25)!important}
+#reading .shelf-cover--percy{background:linear-gradient(145deg,#264a57,#17283b 72%,#101922)!important}
+@media(max-width:640px){
+ #reading .reading-category-links{gap:9px;margin-bottom:25px}
+ #reading .reading-category-link{gap:9px;min-height:72px;padding:12px 10px}
+ #reading .reading-category-link strong{font-size:14px}
+ #reading .reading-category-link small{font-size:10px}
+ #reading .reading-category-icon{font-size:19px}
+ #reading .category-arrow{font-size:15px}
+ #reading .reading-category{margin-top:22px;padding:21px 16px}
+ #reading .reading-category-intro{font-size:14px}
+ #reading .book-jump-list{gap:8px;margin-bottom:19px}
+ #reading .book-jump{flex:1 1 calc(50% - 8px);justify-content:center;min-width:0;min-height:44px;padding:8px 7px;text-align:center;font-size:12px}
+ #reading .book-jump--pending{align-items:center}
+ #reading .book-jump--pending small{font-size:9px}
+ #reading .reading-books .book-entry{gap:18px;padding:24px 0}
+ #reading .reading-books .book-cover{justify-content:flex-start}
+ #reading .reading-books .cover-img{width:125px;height:165px}
+ #reading .book-title-en{font-size:15px}
+ #reading .book-overview .book-review-en{font-size:14px!important}
+}
+@media(prefers-reduced-motion:reduce){#reading .reading-category-link,#reading .book-jump{transition:none}}
